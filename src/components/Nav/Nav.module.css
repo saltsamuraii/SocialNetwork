@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+
+    grid-area: nav;
+    background-color: #6d6d6d;
+}
+
+.link {
+    margin: 0;
+    padding: 10px;
+
+    font-size: 18px;
+    color: #fff;
+
+    text-decoration: none;
+    text-align: left;
+
+    transition: .2s linear;
+}
+
+.link:hover {
+    background-color: #000;
+}

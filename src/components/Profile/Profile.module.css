@@ -1,0 +1,12 @@
+.content {
+    grid-area: content;
+    background-color: #cccccc;
+}
+
+.content img {
+    width: 100%;
+}
+
+.avatar img {
+    width: 50px;
+}
