@@ -1,18 +1,19 @@
 import React from "react";
 import cl from "./Profile.module.css";
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
+import {addPost} from "../../redux/store";
 
 
-const Profile = () => {
-    return <div className={cl.content}>
-        <img
-            src="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg"
-            alt=""/>
-        <div className={cl.avatar}>
-            <img src="https://www.imgworlds.com/wp-content/uploads/2015/12/18-CONTACTUS-HEADER.jpg" alt=""/>
+const Profile = (props) => {
+    return (
+        <div>
+            <ProfileInfo/>
+            <MyPosts posts={props.profilePage.posts}
+                     newPostText={props.profilePage.newPostText}
+                     dispatch={props.dispatch}/>
         </div>
-        <MyPosts/>
-    </div>
+    )
 }
 
 export default Profile;

@@ -22,3 +22,7 @@
 .link:hover {
     background-color: #000;
 }
+
+.activeLink {
+    background-color: #000;
+}
